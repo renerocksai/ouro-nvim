@@ -2,8 +2,10 @@
 
 An agent that grows its own harness inside Neovim.
 
-A port of Dominik Tornow's [Ouro](https://github.com/dtornow/ouro), described in
-[Ouro. The Last Harness](https://x.com/i/article/2108102766837092353).
+Inspired by **Dominik Tornow's [Ouro. The Last Harness](https://x.com/i/article/2108102766837092353)**
+([original X post](https://x.com/DominikTornow/status/2108224785918439600)).
+This project ports the concept from his [Emacs/Lisp Ouro repository](https://github.com/dtornow/ouro)
+to Neovim/Lua. Credit for the one-prompt, one-eval bootstrap idea belongs to Dominik.
 
 Neovim **is** the runtime. The seed makes one OpenAI request and executes one
 Lua chunk in the running editor. That chunk replaces `ouro.agent` with a real
